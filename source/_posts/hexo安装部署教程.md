@@ -6,9 +6,12 @@ tags:
 ##  *1*  建立一个githubpage项目
 ### 使用自定义域名访问博客的前提：
 > 有域名解析至你的github page 我的域名为：blog.wudd.top
+
+
 #### 1.1  建立一个分支 hexo
 * hexo为项目管理分支，即hexo博客项目的主分支
 * master分支为博客展示页面的分支（建好项目即存在的分支）
+
 ## *2* 在本地 clone hexo 分支
 ```bash
 #克隆hexo分支
