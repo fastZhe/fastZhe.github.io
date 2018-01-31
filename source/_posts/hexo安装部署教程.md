@@ -130,10 +130,10 @@ $ git push origin hexo
 * ps 这个是我的域名，请换成自己的
 * 推送至hexo分支
 ```bash
-$ vim CNAME
+$ vim source/CNAME
 blog.wudd.top
 
-$ git add CNAME 
+$ git add . 
 $ git commit -m ""
 $ git push origin hexo
 ```
