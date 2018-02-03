@@ -13,7 +13,6 @@ tags: "hexo"
 * master分支为博客展示页面的分支（建好项目即存在的分支）
 
 ##  在本地 clone hexo 分支
-<!--more-->
 
 ```bash
 #克隆hexo分支

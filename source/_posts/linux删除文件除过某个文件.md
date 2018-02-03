@@ -8,7 +8,7 @@ category: ["linux","shell"]
 ### 使用rm 
 > 删除除了file1 的文件
 
-<!--more-->
+
 
 ```bash
 rm -fr !(file1)
