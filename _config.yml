@@ -72,7 +72,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-laughing
+#theme: hexo-theme-laughing
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -80,3 +81,11 @@ deploy:
   type: git
   repo: https://github.com/fastZhe/fastZhe.github.io
   branch: master
+
+search:
+  path: search.json
+  field: post
+  format: html
+  limit: 10000
+
+since: 2017

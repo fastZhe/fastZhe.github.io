@@ -1,12 +1,14 @@
 ---
 title: linux删除文件除过某个文件
 date: 2018-02-01 09:43:10
-tags: find, rm
-category: shell ,linux
+tags: ["rm","find"]
+category: ["linux","shell"]
 ---
 
 ### 使用rm 
 > 删除除了file1 的文件
+
+<!--more-->
 
 ```bash
 rm -fr !(file1)

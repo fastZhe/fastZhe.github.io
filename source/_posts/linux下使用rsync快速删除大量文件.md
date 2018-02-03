@@ -1,18 +1,18 @@
 ---
 title: linux下使用rsync快速删除大量文件
 date: 2018-01-31 18:07:52
-tags: linux，rsync, rm
-category: linux
+tags: ["rsync","rm"]
+category: ["linux","shell"]
 ---
 
-##问题：快速删除一个文件夹下的大量文件？
+## 问题：快速删除一个文件夹下的大量文件？
 * 使用rm 大量文件会很慢，更大时并且会报错
 > 实际原理：遍历删除
 
 ```bash
 $ rm -fr *
 ```
-
+<!--more-->
 * 使用rsync删除
 > 实际原理：使用空文件夹替换要删除的文件夹
 

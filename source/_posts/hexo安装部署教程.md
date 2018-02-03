@@ -1,33 +1,35 @@
 ---
 title: hexo安装部署教程
 date: 2018-01-30 23:18:15
-tags:
+tags: "hexo"
 ---
-##  *1*  建立一个githubpage项目
+##    建立一个githubpage项目
 ### 使用自定义域名访问博客的前提：
 > 有域名解析至你的github page 我的域名为：blog.wudd.top
 
 
-#### 1.1  建立一个分支 hexo
+####   建立一个分支 hexo
 * hexo为项目管理分支，即hexo博客项目的主分支
 * master分支为博客展示页面的分支（建好项目即存在的分支）
 
-## *2* 在本地 clone hexo 分支
+##  在本地 clone hexo 分支
+<!--more-->
+
 ```bash
 #克隆hexo分支
 $ git clone -b hexo git地址
 #进入克隆好的项目
 $ cd 项目名
 ```
-## *3* 安装hexo 以及相关的主题
+##  安装hexo 以及相关的主题
 ```bash
 #全局安装hexo
 $ sudo npm install -g hexo-cli
 #初始化hexo
 $ hexo init .
 ```
-#### 3.1 编辑项目目录下的 _config.yml文件
-### ps
+####  编辑项目目录下的 _config.yml文件
+##### ps
 * site:为博客自定义内容
 * 主题theme：主题配置项为第四步安装的，默认为自带的，也可不修改
 * deploy:填写自己的githubpage地址，分支为master
@@ -63,7 +65,7 @@ $ vim _config.yml
  82   branch: master
 
 ```
-## *4* 安装hexo相关的主题
+##  安装hexo相关的主题
 * signature:个人签名
 * author.head:个人头像
 * navication:菜单栏
@@ -109,7 +111,7 @@ $ vim _config.yml
  36   laughing: true
 ```
 
-## *5* 编辑githubpage 项目根目录下的.gitignore
+##  编辑githubpage 项目根目录下的.gitignore
 * 配置成以下：避免项目管理分支缺少相关目录
 * 推送至hexo分支
 ```bash
@@ -125,7 +127,7 @@ $ git commit -m ""
 $ git push origin hexo
 ```
 
-## *5* 新建编辑CNAME 自动映射对应的域名
+##  新建编辑CNAME 自动映射对应的域名
 * 填写自己访问的博客地址
 * ps 这个是我的域名，请换成自己的
 * 推送至hexo分支
@@ -139,7 +141,7 @@ $ git push origin hexo
 ```
 
 
-## *6* 发布博客以及推送操作
+##  发布博客以及推送操作
 ```bash
 #新建博客
 $ hexo new "博客名"
