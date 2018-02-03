@@ -1,5 +1,5 @@
 #!/bin/bash
-curDate=$(date +%Y%m%d%h%M)
+curDate=$(date +%Y%m%d%H%M)
 defaultmsg="commit new msg:${curDate}"
 if [ ! -z "$1" ]; then
 defaultmsg=$1
