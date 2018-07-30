@@ -1,1 +1,1 @@
-grep: image: Is a directory
+grep: ./image: Is a directory
