@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.wudd.top/googlea200982f618f51ff.html</loc>
-    
-    <lastmod>2018-08-01T09:36:19.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.wudd.top/2018/08/01/http%E5%8D%8F%E8%AE%AE%E5%AD%A6%E4%B9%A0-2018-8-1/</loc>
     
     <lastmod>2018-07-31T06:59:54.000Z</lastmod>
@@ -30,6 +23,13 @@
   </url>
   
   <url>
+    <loc>http://blog.wudd.top/2018/07/23/%E7%A9%BA%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%BC%8F-2018-07-23/</loc>
+    
+    <lastmod>2018-07-30T06:10:07.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.wudd.top/2018/07/22/%E9%BB%91%E6%9D%BF%E6%A8%A1%E5%BC%8F-2018-07-22/</loc>
     
     <lastmod>2018-07-30T06:10:07.000Z</lastmod>
@@ -44,13 +44,6 @@
   </url>
   
   <url>
-    <loc>http://blog.wudd.top/2018/07/23/%E7%A9%BA%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%BC%8F-2018-07-23/</loc>
-    
-    <lastmod>2018-07-30T06:10:07.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.wudd.top/2018/07/17/netty-codec-2018-07-17/</loc>
     
     <lastmod>2018-07-30T03:55:44.000Z</lastmod>
@@ -58,14 +51,14 @@
   </url>
   
   <url>
-    <loc>http://blog.wudd.top/2018/07/25/tcp%E5%90%8D%E8%AF%8D%E8%A7%A3%E6%9E%90-2018-07-25/</loc>
+    <loc>http://blog.wudd.top/2018/07/20/tcp%E5%AD%A6%E4%B9%A0%E4%B8%8A-2018-07-24/</loc>
     
     <lastmod>2018-07-30T03:52:25.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.wudd.top/2018/07/20/tcp%E5%AD%A6%E4%B9%A0%E4%B8%8A-2018-07-24/</loc>
+    <loc>http://blog.wudd.top/2018/07/25/tcp%E5%90%8D%E8%AF%8D%E8%A7%A3%E6%9E%90-2018-07-25/</loc>
     
     <lastmod>2018-07-30T03:52:25.000Z</lastmod>
     
