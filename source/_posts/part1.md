@@ -1,3 +1,11 @@
+---
+title: netty part1
+date: 2018-07-29 08:36:02
+tags: netty
+categories: ["netty"]
+---
+
+
 ## part1 netty concepts and architecture
 
 netty 是一个先进的框架，主要是创建一个高性能网络应用。在这一部分，我们主要探索三个方面以深度证明netty的能力
