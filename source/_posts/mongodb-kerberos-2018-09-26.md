@@ -69,13 +69,14 @@ journal=true
 
 * 创建对应的kerberos用户以及keytab文件（hz.com为我自己的主机名）
 
-客户端用户：mongodb@HZ.COM  mongodb服务端用户：mongodb/hz.com@HZ.COM
-
-keytab文件：mongodb.keytab                  mongodb_hz.keytab
+>客户端用户：mongodb@HZ.COM  mongodb服务端用户：mongodb/hz.com@HZ.COM
+>keytab文件：mongodb.keytab                  mongodb_hz.keytab
 
 
 * 将mongodb目录下的bin文件夹加入到PATH
+
 以下两句可以追加到文件末尾：/etc/profile   具体路径请根据自己的进行修改
+
 ```
 export MONGODB_HOME=/root/mongodb/mongodb-linux-x86_64-enterprise-rhel70-4.0.2
 export PATH=$MONGODB_HOME/bin:$PATH
@@ -85,6 +86,7 @@ export KRB5_KTNAME=/root/mongodb_hz.keytab
 source /etc/profile
 
 * 添加kerberos登录用户到mongodb
+
 ```
 cd $MONGODB_HOME
 ./bin/mongod -f conf/mongod.conf
@@ -103,6 +105,7 @@ use $external
 exit
 ```
 * 使用kerberos认证启动mongodb
+
 ```
 首先关闭上一个mongod服务,然后使用下面命令启动mongodb
 $ kdestory
@@ -114,6 +117,7 @@ $ mongod-auth --setParameter authenticationMechanisms=GSSAPI -f /root/mongodb/mo
 ![mongodb](/images/mongodb/2018-09-26-01.png)
 
 * 使用kerberos，登录mongodb
+
 ```
 $ kdestory
 $ kinit -kt mongodb.keytab mongodb
