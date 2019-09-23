@@ -313,7 +313,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/21/雇工模式-2018-07-21/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/21/common/设计模式/雇工模式-2018-07-21/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -332,7 +332,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/21/雇工模式-2018-07-21/" itemprop="url">设计模式之雇工模式</a></h1>
+                <a class="post-title-link" href="/2018/07/21/common/设计模式/雇工模式-2018-07-21/" itemprop="url">设计模式之雇工模式</a></h1>
         
 
         <div class="post-meta">
@@ -380,8 +380,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/21/雇工模式-2018-07-21/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/21/雇工模式-2018-07-21/" itemprop="commentCount"></span>
+                <a href="/2018/07/21/common/设计模式/雇工模式-2018-07-21/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/21/common/设计模式/雇工模式-2018-07-21/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -418,7 +418,7 @@
 <p>类似于厨师、裁缝、园丁等都是一组类，具有清洁的能力，但是我们并没有实现，使用雇工模式，就是简化版的命令模式。让被服务对象实现具体的方法，使用雇工来干活<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/21/雇工模式-2018-07-21/#more" rel="contents">
+            <a class="btn" href="/2018/07/21/common/设计模式/雇工模式-2018-07-21/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -471,7 +471,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/20/tcp学习上-2018-07-24/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/20/common/设计模式/对象池模式-2018-07-20/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -490,7 +490,163 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/20/tcp学习上-2018-07-24/" itemprop="url">Tcp学习_上</a></h1>
+                <a class="post-title-link" href="/2018/07/20/common/设计模式/对象池模式-2018-07-20/" itemprop="url">设计模式之对象池模式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-20T08:36:02+08:00">2018-07-20</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/power-design/" itemprop="url" rel="index"><span itemprop="name">power design</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/20/common/设计模式/对象池模式-2018-07-20/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/20/common/设计模式/对象池模式-2018-07-20/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="设计模式之对象池模式"><a href="#设计模式之对象池模式" class="headerlink" title="设计模式之对象池模式"></a>设计模式之对象池模式</h2><ul>
+<li>23中模式之外的新模式</li>
+</ul>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>对象池模式就是依赖于内存中的对象池（在应用启动时进行初始化），通过循环使用对象，减少资源初始化、以及销毁的昂贵损耗！典型的例子是：线程池、连接池<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/20/common/设计模式/对象池模式-2018-07-20/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/20/common/net/tcp学习上-2018-07-24/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/user.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hzhe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/20/common/net/tcp学习上-2018-07-24/" itemprop="url">Tcp学习_上</a></h1>
         
 
         <div class="post-meta">
@@ -538,8 +694,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/20/tcp学习上-2018-07-24/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/20/tcp学习上-2018-07-24/" itemprop="commentCount"></span>
+                <a href="/2018/07/20/common/net/tcp学习上-2018-07-24/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/20/common/net/tcp学习上-2018-07-24/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -575,7 +731,7 @@
 <h3 id="数据流向"><a href="#数据流向" class="headerlink" title="数据流向"></a>数据流向</h3><p>数据 -&gt; tcp(segment) -&gt; ip(packet) -&gt; data link(frame)<br>每个层解析自己的协议，数据交给上层<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/20/tcp学习上-2018-07-24/#more" rel="contents">
+            <a class="btn" href="/2018/07/20/common/net/tcp学习上-2018-07-24/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -628,7 +784,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/20/对象池模式-2018-07-20/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/19/common/设计模式/规格模式-2018-07-19/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -647,163 +803,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/20/对象池模式-2018-07-20/" itemprop="url">设计模式之对象池模式</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-20T08:36:02+08:00">2018-07-20</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/power-design/" itemprop="url" rel="index"><span itemprop="name">power design</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/20/对象池模式-2018-07-20/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/20/对象池模式-2018-07-20/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="设计模式之对象池模式"><a href="#设计模式之对象池模式" class="headerlink" title="设计模式之对象池模式"></a>设计模式之对象池模式</h2><ul>
-<li>23中模式之外的新模式</li>
-</ul>
-<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>对象池模式就是依赖于内存中的对象池（在应用启动时进行初始化），通过循环使用对象，减少资源初始化、以及销毁的昂贵损耗！典型的例子是：线程池、连接池<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/20/对象池模式-2018-07-20/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/19/规格模式-2018-07-19/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="hzz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/user.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hzhe">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/19/规格模式-2018-07-19/" itemprop="url">设计模式之规格模式</a></h1>
+                <a class="post-title-link" href="/2018/07/19/common/设计模式/规格模式-2018-07-19/" itemprop="url">设计模式之规格模式</a></h1>
         
 
         <div class="post-meta">
@@ -851,8 +851,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/19/规格模式-2018-07-19/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/19/规格模式-2018-07-19/" itemprop="commentCount"></span>
+                <a href="/2018/07/19/common/设计模式/规格模式-2018-07-19/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/19/common/设计模式/规格模式-2018-07-19/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -887,7 +887,7 @@
 <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>在一系列对象中根据条件搜索！类似sql，但不同的是从内存中的对象进行搜索<br>具体类似于LINQ（Language Integrated Query）语言集成查询<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/19/规格模式-2018-07-19/#more" rel="contents">
+            <a class="btn" href="/2018/07/19/common/设计模式/规格模式-2018-07-19/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -940,7 +940,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/17/netty-codec-2018-07-17/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/17/netty/netty-codec-2018-07-17/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -959,7 +959,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/17/netty-codec-2018-07-17/" itemprop="url">netty编解码</a></h1>
+                <a class="post-title-link" href="/2018/07/17/netty/netty-codec-2018-07-17/" itemprop="url">netty编解码</a></h1>
         
 
         <div class="post-meta">
@@ -1014,8 +1014,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/17/netty-codec-2018-07-17/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/17/netty-codec-2018-07-17/" itemprop="commentCount"></span>
+                <a href="/2018/07/17/netty/netty-codec-2018-07-17/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/17/netty/netty-codec-2018-07-17/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1052,7 +1052,7 @@
 <li><p>MessageToMessage  出站入站均可（编解码）</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/17/netty-codec-2018-07-17/#more" rel="contents">
+            <a class="btn" href="/2018/07/17/netty/netty-codec-2018-07-17/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1105,7 +1105,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/04/03/solr安装分词/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/04/03/linux/solr/solr安装分词/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -1124,7 +1124,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/03/solr安装分词/" itemprop="url">solr安装分词</a></h1>
+                <a class="post-title-link" href="/2018/04/03/linux/solr/solr安装分词/" itemprop="url">solr安装分词</a></h1>
         
 
         <div class="post-meta">
@@ -1179,8 +1179,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/04/03/solr安装分词/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/04/03/solr安装分词/" itemprop="commentCount"></span>
+                <a href="/2018/04/03/linux/solr/solr安装分词/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/04/03/linux/solr/solr安装分词/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1215,7 +1215,7 @@
 <h4 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xvf solr-7.2.1.tgz</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/04/03/solr安装分词/#more" rel="contents">
+            <a class="btn" href="/2018/04/03/linux/solr/solr安装分词/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1268,7 +1268,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/03/15/localtunnel-server端搭建/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/03/15/linux/反向代理/localtunnel-server端搭建/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -1287,7 +1287,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/15/localtunnel-server端搭建/" itemprop="url">localtunnel server端搭建</a></h1>
+                <a class="post-title-link" href="/2018/03/15/linux/反向代理/localtunnel-server端搭建/" itemprop="url">localtunnel server端搭建</a></h1>
         
 
         <div class="post-meta">
@@ -1335,8 +1335,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/03/15/localtunnel-server端搭建/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/15/localtunnel-server端搭建/" itemprop="commentCount"></span>
+                <a href="/2018/03/15/linux/反向代理/localtunnel-server端搭建/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/15/linux/反向代理/localtunnel-server端搭建/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1377,7 +1377,7 @@
 <li>有独立域名、独立主机（公网ip）
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/15/localtunnel-server端搭建/#more" rel="contents">
+            <a class="btn" href="/2018/03/15/linux/反向代理/localtunnel-server端搭建/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1430,7 +1430,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/02/06/读源码注意的东西/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/02/06/common/读源码注意的东西/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -1449,7 +1449,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/02/06/读源码注意的东西/" itemprop="url">读源码注意的东西</a></h1>
+                <a class="post-title-link" href="/2018/02/06/common/读源码注意的东西/" itemprop="url">读源码注意的东西</a></h1>
         
 
         <div class="post-meta">
@@ -1497,8 +1497,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/02/06/读源码注意的东西/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/06/读源码注意的东西/" itemprop="commentCount"></span>
+                <a href="/2018/02/06/common/读源码注意的东西/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/06/common/读源码注意的东西/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1530,7 +1530,7 @@
           <h2 id="修改相关"><a href="#修改相关" class="headerlink" title="修改相关"></a>修改相关</h2><h6 id="2018-2-6-创建"><a href="#2018-2-6-创建" class="headerlink" title="2018/2/6  创建"></a>2018/2/6  创建</h6><h2 id="怎样读源码，该注意什么问题"><a href="#怎样读源码，该注意什么问题" class="headerlink" title="怎样读源码，该注意什么问题"></a>怎样读源码，该注意什么问题</h2><p><em>前提：读懂源码的动机与原因是什么。</em><br>     <em>看下该项目的设计文档与架构图，宏观上对一些概念有些认识</em><br>     <em>从感兴趣的点设置断点、开始debug</em><br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/02/06/读源码注意的东西/#more" rel="contents">
+            <a class="btn" href="/2018/02/06/common/读源码注意的东西/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1583,7 +1583,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/02/05/字符串反转/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/02/05/common/算法/字符串反转/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -1602,7 +1602,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/02/05/字符串反转/" itemprop="url">字符串反转</a></h1>
+                <a class="post-title-link" href="/2018/02/05/common/算法/字符串反转/" itemprop="url">字符串反转</a></h1>
         
 
         <div class="post-meta">
@@ -1650,8 +1650,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/02/05/字符串反转/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/05/字符串反转/" itemprop="commentCount"></span>
+                <a href="/2018/02/05/common/算法/字符串反转/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/05/common/算法/字符串反转/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1683,7 +1683,7 @@
           <h2 id="以下为字符串反转的几种方法"><a href="#以下为字符串反转的几种方法" class="headerlink" title="以下为字符串反转的几种方法"></a>以下为字符串反转的几种方法</h2><h3 id="遍历字符数组"><a href="#遍历字符数组" class="headerlink" title="遍历字符数组"></a>遍历字符数组</h3>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/02/05/字符串反转/#more" rel="contents">
+            <a class="btn" href="/2018/02/05/common/算法/字符串反转/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1736,7 +1736,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/02/01/linux删除文件除过某个文件/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/02/01/linux/rm/linux删除文件除过某个文件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -1755,7 +1755,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/02/01/linux删除文件除过某个文件/" itemprop="url">linux删除文件除过某个文件</a></h1>
+                <a class="post-title-link" href="/2018/02/01/linux/rm/linux删除文件除过某个文件/" itemprop="url">linux删除文件除过某个文件</a></h1>
         
 
         <div class="post-meta">
@@ -1810,8 +1810,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/02/01/linux删除文件除过某个文件/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/01/linux删除文件除过某个文件/" itemprop="commentCount"></span>
+                <a href="/2018/02/01/linux/rm/linux删除文件除过某个文件/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/01/linux/rm/linux删除文件除过某个文件/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1846,7 +1846,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -fr !(file1)</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/02/01/linux删除文件除过某个文件/#more" rel="contents">
+            <a class="btn" href="/2018/02/01/linux/rm/linux删除文件除过某个文件/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>

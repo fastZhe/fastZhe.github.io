@@ -313,7 +313,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/31/chapter5-2018-7-31/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/31/netty/chapter5-2018-7-31/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -332,7 +332,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/31/chapter5-2018-7-31/" itemprop="url">netty ByteBuf</a></h1>
+                <a class="post-title-link" href="/2018/07/31/netty/chapter5-2018-7-31/" itemprop="url">netty ByteBuf</a></h1>
         
 
         <div class="post-meta">
@@ -387,8 +387,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/31/chapter5-2018-7-31/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/31/chapter5-2018-7-31/" itemprop="commentCount"></span>
+                <a href="/2018/07/31/netty/chapter5-2018-7-31/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/31/netty/chapter5-2018-7-31/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -422,7 +422,7 @@
 <p>netty提供了ByteBuf来承担这一个责任，更加好的API使用<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/31/chapter5-2018-7-31/#more" rel="contents">
+            <a class="btn" href="/2018/07/31/netty/chapter5-2018-7-31/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -475,7 +475,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/30/chapter4-2018-7-30/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/30/netty/chapter4-2018-7-30/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -494,7 +494,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/30/chapter4-2018-7-30/" itemprop="url">netty 传输</a></h1>
+                <a class="post-title-link" href="/2018/07/30/netty/chapter4-2018-7-30/" itemprop="url">netty 传输</a></h1>
         
 
         <div class="post-meta">
@@ -549,8 +549,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/30/chapter4-2018-7-30/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/30/chapter4-2018-7-30/" itemprop="commentCount"></span>
+                <a href="/2018/07/30/netty/chapter4-2018-7-30/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/30/netty/chapter4-2018-7-30/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -583,7 +583,7 @@
 <h4 id="使用传统的jdk来实现blocking与non-blocking"><a href="#使用传统的jdk来实现blocking与non-blocking" class="headerlink" title="使用传统的jdk来实现blocking与non-blocking"></a>使用传统的jdk来实现blocking与non-blocking</h4><h5 id="实现blocking"><a href="#实现blocking" class="headerlink" title="实现blocking"></a>实现blocking</h5>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/30/chapter4-2018-7-30/#more" rel="contents">
+            <a class="btn" href="/2018/07/30/netty/chapter4-2018-7-30/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -636,7 +636,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/29/chapter3-2018-7-29/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/29/netty/part1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -655,7 +655,325 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/29/chapter3-2018-7-29/" itemprop="url">netty 模块与设计</a></h1>
+                <a class="post-title-link" href="/2018/07/29/netty/part1/" itemprop="url">netty part1</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-29T08:36:02+08:00">2018-07-29</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/netty/" itemprop="url" rel="index"><span itemprop="name">netty</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/29/netty/part1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/29/netty/part1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="part1-netty-concepts-and-architecture"><a href="#part1-netty-concepts-and-architecture" class="headerlink" title="part1 netty concepts and architecture"></a>part1 netty concepts and architecture</h2><p>netty 是一个先进的框架，主要是创建一个高性能网络应用。在这一部分，我们主要探索三个方面以深度证明netty的能力</p>
+<ul>
+<li>用netty创建一个网络应用不用你是网络专家</li>
+<li>使用netty将比你使用java API本身容易的多</li>
+<li>netty是设计的最佳实践，使得你的应用本身与网络层解耦
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/29/netty/part1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/29/netty/chapter1-2018-7-27/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/user.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hzhe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/29/netty/chapter1-2018-7-27/" itemprop="url">netty asynchronous</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-29T08:36:02+08:00">2018-07-29</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/netty/" itemprop="url" rel="index"><span itemprop="name">netty</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/netty/asynchronous/" itemprop="url" rel="index"><span itemprop="name">asynchronous</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/29/netty/chapter1-2018-7-27/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/29/netty/chapter1-2018-7-27/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="netty-异步-asynchronous-与事件驱动-event-driven"><a href="#netty-异步-asynchronous-与事件驱动-event-driven" class="headerlink" title="netty 异步(asynchronous)与事件驱动(event-driven)"></a>netty 异步(asynchronous)与事件驱动(event-driven)</h2><p>本章主要介绍java网络、介绍netty、netty核心模块</p>
+<h3 id="blocking-i-o"><a href="#blocking-i-o" class="headerlink" title="blocking i/o"></a>blocking i/o</h3><p>传统的java版阻塞i/o编程，使用java原生API，要编写很多代码，并且这些api并没有经过装饰，所以比较臃肿。<br>示例：<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/29/netty/chapter1-2018-7-27/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/29/netty/chapter3-2018-7-29/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/user.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hzhe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/29/netty/chapter3-2018-7-29/" itemprop="url">netty 模块与设计</a></h1>
         
 
         <div class="post-meta">
@@ -717,8 +1035,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/29/chapter3-2018-7-29/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/29/chapter3-2018-7-29/" itemprop="commentCount"></span>
+                <a href="/2018/07/29/netty/chapter3-2018-7-29/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/29/netty/chapter3-2018-7-29/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -752,7 +1070,7 @@
 <li>Channel –sockets<br>实现最基础的操作，依赖于下层网络传输的支持
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/29/chapter3-2018-7-29/#more" rel="contents">
+            <a class="btn" href="/2018/07/29/netty/chapter3-2018-7-29/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -805,7 +1123,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/29/part1/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/28/netty/chapter2-2018-7-28/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -824,325 +1142,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/29/part1/" itemprop="url">netty part1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-29T08:36:02+08:00">2018-07-29</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/netty/" itemprop="url" rel="index"><span itemprop="name">netty</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/29/part1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/29/part1/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="part1-netty-concepts-and-architecture"><a href="#part1-netty-concepts-and-architecture" class="headerlink" title="part1 netty concepts and architecture"></a>part1 netty concepts and architecture</h2><p>netty 是一个先进的框架，主要是创建一个高性能网络应用。在这一部分，我们主要探索三个方面以深度证明netty的能力</p>
-<ul>
-<li>用netty创建一个网络应用不用你是网络专家</li>
-<li>使用netty将比你使用java API本身容易的多</li>
-<li>netty是设计的最佳实践，使得你的应用本身与网络层解耦
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/29/part1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/29/chapter1-2018-7-27/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="hzz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/user.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hzhe">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/29/chapter1-2018-7-27/" itemprop="url">netty asynchronous</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-29T08:36:02+08:00">2018-07-29</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/netty/" itemprop="url" rel="index"><span itemprop="name">netty</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/netty/asynchronous/" itemprop="url" rel="index"><span itemprop="name">asynchronous</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/29/chapter1-2018-7-27/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/29/chapter1-2018-7-27/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="netty-异步-asynchronous-与事件驱动-event-driven"><a href="#netty-异步-asynchronous-与事件驱动-event-driven" class="headerlink" title="netty 异步(asynchronous)与事件驱动(event-driven)"></a>netty 异步(asynchronous)与事件驱动(event-driven)</h2><p>本章主要介绍java网络、介绍netty、netty核心模块</p>
-<h3 id="blocking-i-o"><a href="#blocking-i-o" class="headerlink" title="blocking i/o"></a>blocking i/o</h3><p>传统的java版阻塞i/o编程，使用java原生API，要编写很多代码，并且这些api并没有经过装饰，所以比较臃肿。<br>示例：<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/29/chapter1-2018-7-27/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/28/chapter2-2018-7-28/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="hzz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/user.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hzhe">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/28/chapter2-2018-7-28/" itemprop="url">netty-第一个netty应用</a></h1>
+                <a class="post-title-link" href="/2018/07/28/netty/chapter2-2018-7-28/" itemprop="url">netty-第一个netty应用</a></h1>
         
 
         <div class="post-meta">
@@ -1190,8 +1190,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/28/chapter2-2018-7-28/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/28/chapter2-2018-7-28/" itemprop="commentCount"></span>
+                <a href="/2018/07/28/netty/chapter2-2018-7-28/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/28/netty/chapter2-2018-7-28/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1228,7 +1228,7 @@
 <li>plain text edit 或者 integrated development environment -&gt; IDE
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/28/chapter2-2018-7-28/#more" rel="contents">
+            <a class="btn" href="/2018/07/28/netty/chapter2-2018-7-28/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1281,7 +1281,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/25/tcp学习下-2018-07-26/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/25/common/net/tcp学习下-2018-07-26/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -1300,7 +1300,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/25/tcp学习下-2018-07-26/" itemprop="url">Tcp学习-下</a></h1>
+                <a class="post-title-link" href="/2018/07/25/common/net/tcp学习下-2018-07-26/" itemprop="url">Tcp学习-下</a></h1>
         
 
         <div class="post-meta">
@@ -1355,8 +1355,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/25/tcp学习下-2018-07-26/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/25/tcp学习下-2018-07-26/" itemprop="commentCount"></span>
+                <a href="/2018/07/25/common/net/tcp学习下-2018-07-26/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/25/common/net/tcp学习下-2018-07-26/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1394,7 +1394,7 @@
 <li>SRTT：smoothed RTT 平滑RTT
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/25/tcp学习下-2018-07-26/#more" rel="contents">
+            <a class="btn" href="/2018/07/25/common/net/tcp学习下-2018-07-26/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1447,7 +1447,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/25/tcp名词解析-2018-07-25/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/25/common/net/tcp名词解析-2018-07-25/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -1466,7 +1466,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/25/tcp名词解析-2018-07-25/" itemprop="url">Tcp名词解析</a></h1>
+                <a class="post-title-link" href="/2018/07/25/common/net/tcp名词解析-2018-07-25/" itemprop="url">Tcp名词解析</a></h1>
         
 
         <div class="post-meta">
@@ -1521,8 +1521,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/25/tcp名词解析-2018-07-25/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/25/tcp名词解析-2018-07-25/" itemprop="commentCount"></span>
+                <a href="/2018/07/25/common/net/tcp名词解析-2018-07-25/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/25/common/net/tcp名词解析-2018-07-25/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1562,7 +1562,7 @@
 <li><p>PSH表示有 DATA数据传输</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/25/tcp名词解析-2018-07-25/#more" rel="contents">
+            <a class="btn" href="/2018/07/25/common/net/tcp名词解析-2018-07-25/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1615,7 +1615,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/23/空对象模式-2018-07-23/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/23/common/设计模式/空对象模式-2018-07-23/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -1634,7 +1634,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/23/空对象模式-2018-07-23/" itemprop="url">设计模式之空对象模式</a></h1>
+                <a class="post-title-link" href="/2018/07/23/common/设计模式/空对象模式-2018-07-23/" itemprop="url">设计模式之空对象模式</a></h1>
         
 
         <div class="post-meta">
@@ -1682,8 +1682,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/23/空对象模式-2018-07-23/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/23/空对象模式-2018-07-23/" itemprop="commentCount"></span>
+                <a href="/2018/07/23/common/设计模式/空对象模式-2018-07-23/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/23/common/设计模式/空对象模式-2018-07-23/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1718,7 +1718,7 @@
 <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>通过实现一个默认的无意义对象类避免null值实现<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/23/空对象模式-2018-07-23/#more" rel="contents">
+            <a class="btn" href="/2018/07/23/common/设计模式/空对象模式-2018-07-23/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1771,7 +1771,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/22/黑板模式-2018-07-22/">
+    <link itemprop="mainEntityOfPage" href="http://blog.wudd.top/2018/07/22/common/设计模式/黑板模式-2018-07-22/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hzz">
@@ -1790,7 +1790,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/22/黑板模式-2018-07-22/" itemprop="url">设计模式之黑板模式</a></h1>
+                <a class="post-title-link" href="/2018/07/22/common/设计模式/黑板模式-2018-07-22/" itemprop="url">设计模式之黑板模式</a></h1>
         
 
         <div class="post-meta">
@@ -1838,8 +1838,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/22/黑板模式-2018-07-22/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/22/黑板模式-2018-07-22/" itemprop="commentCount"></span>
+                <a href="/2018/07/22/common/设计模式/黑板模式-2018-07-22/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/22/common/设计模式/黑板模式-2018-07-22/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1874,7 +1874,7 @@
 <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>黑板模式是观察者模式的一个扩展，允许消息的读写同时进行，广泛地交互消息<br>就像一个黑板，任何一个老师都可以写东西，同学都可以看东西，在时间上和空间上彻底解耦</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/22/黑板模式-2018-07-22/#more" rel="contents">
+            <a class="btn" href="/2018/07/22/common/设计模式/黑板模式-2018-07-22/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
