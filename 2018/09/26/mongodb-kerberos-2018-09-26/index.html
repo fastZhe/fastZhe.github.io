@@ -108,7 +108,7 @@
 <meta property="og:description" content="简介 Kerberos（KDC） 几个重要的概念：  12345678Principal：任何服务器所提供的用户、计算机、服务都将被定义成Principal。本例使用客户端使用：mongodb@HZ.COM  mongodb服务端使用：mongodb/hz.com@HZ.COMInstances：用于服务principals和特殊管理Principal。Realms：Kerberos安装提供的独特">
 <meta property="og:image" content="http://blog.wudd.top/images/mongodb/2018-09-26-01.png">
 <meta property="og:image" content="http://blog.wudd.top/images/mongodb/2018-09-26-02.png">
-<meta property="og:updated_time" content="2018-09-26T07:35:00.529Z">
+<meta property="og:updated_time" content="2019-09-23T06:59:23.082Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mongodb 整合kerberos以及java连接">
 <meta name="twitter:description" content="简介 Kerberos（KDC） 几个重要的概念：  12345678Principal：任何服务器所提供的用户、计算机、服务都将被定义成Principal。本例使用客户端使用：mongodb@HZ.COM  mongodb服务端使用：mongodb/hz.com@HZ.COMInstances：用于服务principals和特殊管理Principal。Realms：Kerberos安装提供的独特">
@@ -434,6 +434,7 @@
 <li>Kerberos（KDC） 几个重要的概念：</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Principal：任何服务器所提供的用户、计算机、服务都将被定义成Principal。本例使用客户端使用：mongodb@HZ.COM  mongodb服务端使用：mongodb/hz.com@HZ.COM</span><br><span class="line">Instances：用于服务principals和特殊管理Principal。</span><br><span class="line">Realms：Kerberos安装提供的独特的域的控制，把它想象成你的主机和用户所属的主机或者组。官方约定这域需要大写。默认的，Ubuntu将把DNS域名转换为大写当成这里的域。 本例使用HZ.COM</span><br><span class="line">Key Distribution Center: （KDC）由三部分组成，一是principal数据库，认证服务器，和票据授予服务器。每个Realm至少要有一个。</span><br><span class="line">Ticket Granting Ticket：由认证服务器（AS）签发，Ticket Granting Ticket (TGT)使用用户的密码加密，这个密码只有用户和KDC知道。</span><br><span class="line">Ticket Granting Server: (TGS) 根据请求签发服务的票据。</span><br><span class="line">Tickets：确认两个Principal的身份。一个主体是用户，另一个是由用户请求的服务。门票会建立一个加密密钥，用于在身份验证会话中的安全通信。</span><br><span class="line">Keytab Files：从KDC主数据库中提取的文件，并且包含的服务或主机的加密密钥。</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <ul>
 <li>mongodb 启用kerberos<br>使用kerberos授权登录可以更大的增加安全性</li>
 </ul>

@@ -99,17 +99,17 @@
   <meta name="keywords" content="solr,lucene,search," />
 
 
-<meta name="description" content="环境 centos7下载solr地址：http://www.apache.org/dyn/closer.lua/lucene/solr/7.2.1  解压1tar -xvf solr-7.2.1.tgz 1. 直接使用solr123cd solrHome(solrHome是solr的路径)cd binsolr start 1.1. 创建core 或者collection 意义一致12solr c">
+<meta name="description" content="环境 centos7下载solr地址：http://www.apache.org/dyn/closer.lua/lucene/solr/7.2.1  解压1tar -xvf solr-7.2.1.tgz">
 <meta name="keywords" content="solr,lucene,search">
 <meta property="og:type" content="article">
 <meta property="og:title" content="solr安装分词">
 <meta property="og:url" content="http://blog.wudd.top/2018/04/03/solr安装分词/index.html">
 <meta property="og:site_name" content="Hzhe">
-<meta property="og:description" content="环境 centos7下载solr地址：http://www.apache.org/dyn/closer.lua/lucene/solr/7.2.1  解压1tar -xvf solr-7.2.1.tgz 1. 直接使用solr123cd solrHome(solrHome是solr的路径)cd binsolr start 1.1. 创建core 或者collection 意义一致12solr c">
-<meta property="og:updated_time" content="2018-04-03T08:34:06.000Z">
+<meta property="og:description" content="环境 centos7下载solr地址：http://www.apache.org/dyn/closer.lua/lucene/solr/7.2.1  解压1tar -xvf solr-7.2.1.tgz">
+<meta property="og:updated_time" content="2019-09-23T06:59:18.109Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="solr安装分词">
-<meta name="twitter:description" content="环境 centos7下载solr地址：http://www.apache.org/dyn/closer.lua/lucene/solr/7.2.1  解压1tar -xvf solr-7.2.1.tgz 1. 直接使用solr123cd solrHome(solrHome是solr的路径)cd binsolr start 1.1. 创建core 或者collection 意义一致12solr c">
+<meta name="twitter:description" content="环境 centos7下载solr地址：http://www.apache.org/dyn/closer.lua/lucene/solr/7.2.1  解压1tar -xvf solr-7.2.1.tgz">
 
 
 
@@ -424,6 +424,7 @@
 <li>环境 centos7<h3 id="下载solr"><a href="#下载solr" class="headerlink" title="下载solr"></a>下载solr</h3><code>地址：http://www.apache.org/dyn/closer.lua/lucene/solr/7.2.1</code></li>
 </ul>
 <h4 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xvf solr-7.2.1.tgz</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h3 id="1-直接使用solr"><a href="#1-直接使用solr" class="headerlink" title="1. 直接使用solr"></a>1. 直接使用solr</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd solrHome(solrHome是solr的路径)</span><br><span class="line">cd bin</span><br><span class="line">solr start</span><br></pre></td></tr></table></figure>
 <h4 id="1-1-创建core-或者collection-意义一致"><a href="#1-1-创建core-或者collection-意义一致" class="headerlink" title="1.1. 创建core 或者collection 意义一致"></a>1.1. 创建core 或者collection 意义一致</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">solr create -c articles</span><br><span class="line">控制台：http://127.0.0.1:8983/solr</span><br></pre></td></tr></table></figure>
 <h4 id="1-2-创建分词器"><a href="#1-2-创建分词器" class="headerlink" title="1.2. 创建分词器"></a>1.2. 创建分词器</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">下载地址：https://pan.baidu.com/s/1smOxPhF</span><br><span class="line">将解分词资料里的ik-analyzer-solr5-5.x.jar拷贝到你的solr目录下的\server\solr-webapp\webapp\WEB-INF\lib目录中去，</span><br><span class="line">将IKAnalyzer.cfg.xml，mydict.dic（搜狗的扩展词库），stopword.dic放在你的solr目录下的\server\solr-webapp\webapp\WEB-INF\classes目录中去</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">修改 articles集合目录下的managed-schema</span><br><span class="line"></span><br><span class="line">添加以下4行：</span><br><span class="line"></span><br><span class="line">&lt;fieldType name=<span class="string">"text_ik"</span> class=<span class="string">"solr.TextField"</span>&gt;  </span><br><span class="line">        &lt;analyzer class=<span class="string">"org.wltea.analyzer.lucene.IKAnalyzer"</span>/&gt;  </span><br><span class="line">&lt;/fieldType&gt;  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">重启或者reload</span><br></pre></td></tr></table></figure>

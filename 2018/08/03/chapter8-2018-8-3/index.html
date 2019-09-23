@@ -99,13 +99,13 @@
   <meta name="keywords" content="netty," />
 
 
-<meta name="description" content="本章主要覆盖以下方面  Bootstraping 客户端与服务端 在一个channle中的Bootstraping 客户端 添加channelHandlers 使用ChannelOptions以及属性   Bootstrap 类一个server端的Bootstrap，如上图所示，主要用于接收连接，并且创建一个子Channels与客户端服务，然而客户端只需要一个，因此不需要父级的channel。对于">
+<meta name="description" content="本章主要覆盖以下方面  Bootstraping 客户端与服务端 在一个channle中的Bootstraping 客户端 添加channelHandlers 使用ChannelOptions以及属性">
 <meta name="keywords" content="netty">
 <meta property="og:type" content="article">
 <meta property="og:title" content="netty Bootstrap">
 <meta property="og:url" content="http://blog.wudd.top/2018/08/03/chapter8-2018-8-3/index.html">
 <meta property="og:site_name" content="Hzhe">
-<meta property="og:description" content="本章主要覆盖以下方面  Bootstraping 客户端与服务端 在一个channle中的Bootstraping 客户端 添加channelHandlers 使用ChannelOptions以及属性   Bootstrap 类一个server端的Bootstrap，如上图所示，主要用于接收连接，并且创建一个子Channels与客户端服务，然而客户端只需要一个，因此不需要父级的channel。对于">
+<meta property="og:description" content="本章主要覆盖以下方面  Bootstraping 客户端与服务端 在一个channle中的Bootstraping 客户端 添加channelHandlers 使用ChannelOptions以及属性">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-3-1.png">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-3-2.png">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-3-3.png">
@@ -113,10 +113,10 @@
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-3-5.png">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-3-6.png">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-3-7.png">
-<meta property="og:updated_time" content="2018-08-05T07:15:28.000Z">
+<meta property="og:updated_time" content="2019-09-23T06:59:35.070Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="netty Bootstrap">
-<meta name="twitter:description" content="本章主要覆盖以下方面  Bootstraping 客户端与服务端 在一个channle中的Bootstraping 客户端 添加channelHandlers 使用ChannelOptions以及属性   Bootstrap 类一个server端的Bootstrap，如上图所示，主要用于接收连接，并且创建一个子Channels与客户端服务，然而客户端只需要一个，因此不需要父级的channel。对于">
+<meta name="twitter:description" content="本章主要覆盖以下方面  Bootstraping 客户端与服务端 在一个channle中的Bootstraping 客户端 添加channelHandlers 使用ChannelOptions以及属性">
 <meta name="twitter:image" content="http://blog.wudd.top/images/netty_part1/2018-8-3-1.png">
 
 
@@ -433,7 +433,8 @@
 <li>Bootstraping 客户端与服务端</li>
 <li>在一个channle中的Bootstraping 客户端</li>
 <li>添加channelHandlers</li>
-<li>使用ChannelOptions以及属性</li>
+<li>使用ChannelOptions以及属性<a id="more"></a>
+</li>
 </ul>
 <p><img src="/images/netty_part1/2018-8-3-1.png" alt="netty-8"></p>
 <h3 id="Bootstrap-类"><a href="#Bootstrap-类" class="headerlink" title="Bootstrap 类"></a>Bootstrap 类</h3><p>一个server端的Bootstrap，如上图所示，主要用于接收连接，并且创建一个子Channels与客户端服务，然而客户端只需要一个，因此不需要父级的channel。对于udp的服务端也一样如此</p>

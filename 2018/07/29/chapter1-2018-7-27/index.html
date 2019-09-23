@@ -99,17 +99,17 @@
   <meta name="keywords" content="netty," />
 
 
-<meta name="description" content="netty 异步(asynchronous)与事件驱动(event-driven)本章主要介绍java网络、介绍netty、netty核心模块 blocking i/o传统的java版阻塞i/o编程，使用java原生API，要编写很多代码，并且这些api并没有经过装饰，所以比较臃肿。示例：123456789101112131415161718192021222324252627282930publ">
+<meta name="description" content="netty 异步(asynchronous)与事件驱动(event-driven)本章主要介绍java网络、介绍netty、netty核心模块 blocking i/o传统的java版阻塞i/o编程，使用java原生API，要编写很多代码，并且这些api并没有经过装饰，所以比较臃肿。示例：">
 <meta name="keywords" content="netty">
 <meta property="og:type" content="article">
 <meta property="og:title" content="netty asynchronous">
 <meta property="og:url" content="http://blog.wudd.top/2018/07/29/chapter1-2018-7-27/index.html">
 <meta property="og:site_name" content="Hzhe">
-<meta property="og:description" content="netty 异步(asynchronous)与事件驱动(event-driven)本章主要介绍java网络、介绍netty、netty核心模块 blocking i/o传统的java版阻塞i/o编程，使用java原生API，要编写很多代码，并且这些api并没有经过装饰，所以比较臃肿。示例：123456789101112131415161718192021222324252627282930publ">
-<meta property="og:updated_time" content="2018-08-05T13:24:56.000Z">
+<meta property="og:description" content="netty 异步(asynchronous)与事件驱动(event-driven)本章主要介绍java网络、介绍netty、netty核心模块 blocking i/o传统的java版阻塞i/o编程，使用java原生API，要编写很多代码，并且这些api并没有经过装饰，所以比较臃肿。示例：">
+<meta property="og:updated_time" content="2019-09-23T06:59:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="netty asynchronous">
-<meta name="twitter:description" content="netty 异步(asynchronous)与事件驱动(event-driven)本章主要介绍java网络、介绍netty、netty核心模块 blocking i/o传统的java版阻塞i/o编程，使用java原生API，要编写很多代码，并且这些api并没有经过装饰，所以比较臃肿。示例：123456789101112131415161718192021222324252627282930publ">
+<meta name="twitter:description" content="netty 异步(asynchronous)与事件驱动(event-driven)本章主要介绍java网络、介绍netty、netty核心模块 blocking i/o传统的java版阻塞i/o编程，使用java原生API，要编写很多代码，并且这些api并没有经过装饰，所以比较臃肿。示例：">
 
 
 
@@ -421,7 +421,8 @@
 
       
         <h2 id="netty-异步-asynchronous-与事件驱动-event-driven"><a href="#netty-异步-asynchronous-与事件驱动-event-driven" class="headerlink" title="netty 异步(asynchronous)与事件驱动(event-driven)"></a>netty 异步(asynchronous)与事件驱动(event-driven)</h2><p>本章主要介绍java网络、介绍netty、netty核心模块</p>
-<h3 id="blocking-i-o"><a href="#blocking-i-o" class="headerlink" title="blocking i/o"></a>blocking i/o</h3><p>传统的java版阻塞i/o编程，使用java原生API，要编写很多代码，并且这些api并没有经过装饰，所以比较臃肿。<br>示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">public class BlockingIoExample &#123;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * Listing 1.1 Blocking I/O example</span><br><span class="line">     * */</span><br><span class="line">    public void serve(int portNumber) throws IOException &#123;</span><br><span class="line">        ServerSocket serverSocket = new ServerSocket(portNumber);</span><br><span class="line">        Socket clientSocket = serverSocket.accept();</span><br><span class="line">        BufferedReader in = new BufferedReader(</span><br><span class="line">                new InputStreamReader(clientSocket.getInputStream()));</span><br><span class="line">        PrintWriter out =</span><br><span class="line">                new PrintWriter(clientSocket.getOutputStream(), true);</span><br><span class="line">        String request, response;</span><br><span class="line">        while ((request = in.readLine()) != null) &#123;</span><br><span class="line">            if (&quot;Done&quot;.equals(request)) &#123;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">            response = processRequest(request);</span><br><span class="line">            out.println(response);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private String processRequest(String request)&#123;</span><br><span class="line">        return &quot;Processed&quot;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) throws IOException &#123;</span><br><span class="line">        new BlockingIoExample().serve(8090);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="blocking-i-o"><a href="#blocking-i-o" class="headerlink" title="blocking i/o"></a>blocking i/o</h3><p>传统的java版阻塞i/o编程，使用java原生API，要编写很多代码，并且这些api并没有经过装饰，所以比较臃肿。<br>示例：<br><a id="more"></a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">public class BlockingIoExample &#123;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * Listing 1.1 Blocking I/O example</span><br><span class="line">     * */</span><br><span class="line">    public void serve(int portNumber) throws IOException &#123;</span><br><span class="line">        ServerSocket serverSocket = new ServerSocket(portNumber);</span><br><span class="line">        Socket clientSocket = serverSocket.accept();</span><br><span class="line">        BufferedReader in = new BufferedReader(</span><br><span class="line">                new InputStreamReader(clientSocket.getInputStream()));</span><br><span class="line">        PrintWriter out =</span><br><span class="line">                new PrintWriter(clientSocket.getOutputStream(), true);</span><br><span class="line">        String request, response;</span><br><span class="line">        while ((request = in.readLine()) != null) &#123;</span><br><span class="line">            if (&quot;Done&quot;.equals(request)) &#123;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">            response = processRequest(request);</span><br><span class="line">            out.println(response);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private String processRequest(String request)&#123;</span><br><span class="line">        return &quot;Processed&quot;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) throws IOException &#123;</span><br><span class="line">        new BlockingIoExample().serve(8090);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>试想一下，如果client数量有多少个，就有多少个线程，那么对于资源是极度浪费的，包括栈内存、堆内存、以及系统间线程的切换，以及内存的使用</p>
 <h3 id="non-blocking-java-NIO"><a href="#non-blocking-java-NIO" class="headerlink" title="non-blocking java NIO"></a>non-blocking java NIO</h3><p>java是在2002年的JDK1.4支持NIO</p>
 <h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><ul>
@@ -562,8 +563,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/29/part1/" rel="next" title="netty part1">
-                <i class="fa fa-chevron-left"></i> netty part1
+              <a href="/2018/07/28/chapter2-2018-7-28/" rel="next" title="netty-第一个netty应用">
+                <i class="fa fa-chevron-left"></i> netty-第一个netty应用
               </a>
             
           </div>
@@ -572,8 +573,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/30/chapter4-2018-7-30/" rel="prev" title="netty 传输">
-                netty 传输 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/29/part1/" rel="prev" title="netty part1">
+                netty part1 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

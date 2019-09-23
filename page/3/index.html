@@ -410,14 +410,12 @@
 
       
         
-          
-          设计模式之雇工模式
-23中模式之外的新模式
-
-简介雇工模式也叫做仆人模式：雇工模式是行为模式的一种，它为一组类提供通用的功能，而不需要类实现这些功能，他是命令模式的一种扩展。
-
-类似于厨师、裁缝、园丁等都是一组类，具有清洁的能力，但是我们并没有实现，使用雇工模式，就是简化版的命令模式。让被服务对象实
-          ...
+          <h2 id="设计模式之雇工模式"><a href="#设计模式之雇工模式" class="headerlink" title="设计模式之雇工模式"></a>设计模式之雇工模式</h2><ul>
+<li>23中模式之外的新模式</li>
+</ul>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>雇工模式也叫做仆人模式：雇工模式是行为模式的一种，它为一组类提供通用的功能，而不需要类实现这些功能，他是命令模式的一种扩展。</p>
+<blockquote>
+<p>类似于厨师、裁缝、园丁等都是一组类，具有清洁的能力，但是我们并没有实现，使用雇工模式，就是简化版的命令模式。让被服务对象实现具体的方法，使用雇工来干活<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/07/21/雇工模式-2018-07-21/#more" rel="contents">
@@ -570,12 +568,11 @@
 
       
         
-          
-          
-本文主要参考、copy陈皓老师的tcp那些事儿，再此谢谢陈皓老师
-
-简介tcp在网络OSI的七层模型中第四层–transport层，ip在第三层–network层，Arp在第二层–data link层，在第二层的数据，我们叫Frame，在第三层的数据我们叫Packet，第四层的数据叫segment
-          ...
+          <blockquote>
+<p>本文主要参考、copy陈皓老师的tcp那些事儿，再此谢谢陈皓老师</p>
+</blockquote>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>tcp在网络OSI的七层模型中第四层–transport层，ip在第三层–network层，Arp在第二层–data link层，在第二层的数据，我们叫Frame，在第三层的数据我们叫Packet，第四层的数据叫segment</p>
+<h3 id="数据流向"><a href="#数据流向" class="headerlink" title="数据流向"></a>数据流向</h3><p>数据 -&gt; tcp(segment) -&gt; ip(packet) -&gt; data link(frame)<br>每个层解析自己的协议，数据交给上层<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/07/20/tcp学习上-2018-07-24/#more" rel="contents">
@@ -728,18 +725,10 @@
 
       
         
-          
-          设计模式之对象池模式
-23中模式之外的新模式
-
-简介对象池模式就是依赖于内存中的对象池（在应用启动时进行初始化），通过循环使用对象，减少资源初始化、以及销毁的昂贵损耗！典型的例子是：线程池、连接池
-类图
-对象池
-
-
-
-最佳实践只有在重复生成对象的操作成为影响性能的关键因素时，才适合进行对象池化，但是
-          ...
+          <h2 id="设计模式之对象池模式"><a href="#设计模式之对象池模式" class="headerlink" title="设计模式之对象池模式"></a>设计模式之对象池模式</h2><ul>
+<li>23中模式之外的新模式</li>
+</ul>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>对象池模式就是依赖于内存中的对象池（在应用启动时进行初始化），通过循环使用对象，减少资源初始化、以及销毁的昂贵损耗！典型的例子是：线程池、连接池<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/07/20/对象池模式-2018-07-20/#more" rel="contents">
@@ -892,14 +881,10 @@
 
       
         
-          
-          设计模式之规格模式
-23中模式之外的新模式
-
-简介在一系列对象中根据条件搜索！类似sql，但不同的是从内存中的对象进行搜索具体类似于LINQ（Language Integrated Query）语言集成查询
-初步实践
-1.创建一个接口，实现按照某种条件筛选：IUserProvider  2.实现以上
-          ...
+          <h2 id="设计模式之规格模式"><a href="#设计模式之规格模式" class="headerlink" title="设计模式之规格模式"></a>设计模式之规格模式</h2><ul>
+<li>23中模式之外的新模式</li>
+</ul>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>在一系列对象中根据条件搜索！类似sql，但不同的是从内存中的对象进行搜索<br>具体类似于LINQ（Language Integrated Query）语言集成查询<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/07/19/规格模式-2018-07-19/#more" rel="contents">
@@ -1059,14 +1044,12 @@
 
       
         
-          
-          关于netty的编解码关于netty的编解码学习，一般涉及到数据的出站与入站，在出站时调用编码、在入站时调用解码，编解码都是成对出现，不能出现只有一个。
-netty的编解码类别netty的编解码类别主要分为以下三种
-
-ByteToMessage 入站解码
-MessageToByte 出站编码
-Mes
-          ...
+          <h2 id="关于netty的编解码"><a href="#关于netty的编解码" class="headerlink" title="关于netty的编解码"></a>关于netty的编解码</h2><p>关于netty的编解码学习，一般涉及到数据的出站与入站，在出站时调用编码、在入站时调用解码，编解码都是成对出现，不能出现只有一个。</p>
+<h3 id="netty的编解码类别"><a href="#netty的编解码类别" class="headerlink" title="netty的编解码类别"></a>netty的编解码类别</h3><p>netty的编解码类别主要分为以下三种</p>
+<ul>
+<li>ByteToMessage 入站解码</li>
+<li>MessageToByte 出站编码</li>
+<li><p>MessageToMessage  出站入站均可（编解码）</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/07/17/netty-codec-2018-07-17/#more" rel="contents">
@@ -1226,13 +1209,10 @@ Mes
 
       
         
-          
-          
-环境 centos7下载solr地址：http://www.apache.org/dyn/closer.lua/lucene/solr/7.2.1
-
-解压1tar -xvf solr-7.2.1.tgz
-1. 直接使用solr123cd solrHome(solrHome是solr的路径)cd b
-          ...
+          <ul>
+<li>环境 centos7<h3 id="下载solr"><a href="#下载solr" class="headerlink" title="下载solr"></a>下载solr</h3><code>地址：http://www.apache.org/dyn/closer.lua/lucene/solr/7.2.1</code></li>
+</ul>
+<h4 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xvf solr-7.2.1.tgz</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/04/03/solr安装分词/#more" rel="contents">
@@ -1385,20 +1365,16 @@ Mes
 
       
         
-          
-          localtunnel server下载程序
-以下地址为localtunnel server的git页面
-
-https://github.com/localtunnel/server
-
-下载安装
-
-
-前提：本机安装git、 nodejs 
-有独立域名、独立主机（公网ip）
-
-123$ git clo
-          ...
+          <h2 id="localtunnel-server"><a href="#localtunnel-server" class="headerlink" title="localtunnel server"></a>localtunnel server</h2><h3 id="下载程序"><a href="#下载程序" class="headerlink" title="下载程序"></a>下载程序</h3><blockquote>
+<p>以下地址为localtunnel server的git页面</p>
+</blockquote>
+<p><code>https://github.com/localtunnel/server</code></p>
+<blockquote>
+<p>下载安装</p>
+</blockquote>
+<ul>
+<li>前提：本机安装git、 nodejs </li>
+<li>有独立域名、独立主机（公网ip）
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/03/15/localtunnel-server端搭建/#more" rel="contents">
@@ -1551,15 +1527,7 @@ https://github.com/localtunnel/server
 
       
         
-          
-          修改相关2018/2/6  创建怎样读源码，该注意什么问题前提：读懂源码的动机与原因是什么。     看下该项目的设计文档与架构图，宏观上对一些概念有些认识     从感兴趣的点设置断点、开始debug
-
-了解语言
-了解设计模式
-了解命名习惯-统一规约
-是了解整体架构，而不是地毯式遍历每一行代码
-了
-          ...
+          <h2 id="修改相关"><a href="#修改相关" class="headerlink" title="修改相关"></a>修改相关</h2><h6 id="2018-2-6-创建"><a href="#2018-2-6-创建" class="headerlink" title="2018/2/6  创建"></a>2018/2/6  创建</h6><h2 id="怎样读源码，该注意什么问题"><a href="#怎样读源码，该注意什么问题" class="headerlink" title="怎样读源码，该注意什么问题"></a>怎样读源码，该注意什么问题</h2><p><em>前提：读懂源码的动机与原因是什么。</em><br>     <em>看下该项目的设计文档与架构图，宏观上对一些概念有些认识</em><br>     <em>从感兴趣的点设置断点、开始debug</em><br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/02/06/读源码注意的东西/#more" rel="contents">
@@ -1712,9 +1680,7 @@ https://github.com/localtunnel/server
 
       
         
-          
-          以下为字符串反转的几种方法遍历字符数组1234567891011121314151617181920212223242526272829public static void reverse3(String src)&#123;    if(src==null)&#123;        throw 
-          ...
+          <h2 id="以下为字符串反转的几种方法"><a href="#以下为字符串反转的几种方法" class="headerlink" title="以下为字符串反转的几种方法"></a>以下为字符串反转的几种方法</h2><h3 id="遍历字符数组"><a href="#遍历字符数组" class="headerlink" title="遍历字符数组"></a>遍历字符数组</h3>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/02/05/字符串反转/#more" rel="contents">
@@ -1874,16 +1840,10 @@ https://github.com/localtunnel/server
 
       
         
-          
-          使用rm
-删除除了file1 的文件
-
-1rm -fr !(file1)
-使用find
-删除除了file1
-
-12find ./* -not -name "file1" | xargs rm -frfind ./* -not -name "file1" -exec rm -fr &#123;&#12
-          ...
+          <h3 id="使用rm"><a href="#使用rm" class="headerlink" title="使用rm"></a>使用rm</h3><blockquote>
+<p>删除除了file1 的文件</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -fr !(file1)</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/02/01/linux删除文件除过某个文件/#more" rel="contents">
