@@ -915,3 +915,8 @@ images: images
 version: 6.0.3
 
 avatar: /images/user.jpg
+
+
+# Fireworks and love
+fireworks: true
+love: false
