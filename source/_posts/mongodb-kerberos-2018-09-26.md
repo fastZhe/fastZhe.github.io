@@ -19,6 +19,7 @@ Ticket Granting Server: (TGS) 根据请求签发服务的票据。
 Tickets：确认两个Principal的身份。一个主体是用户，另一个是由用户请求的服务。门票会建立一个加密密钥，用于在身份验证会话中的安全通信。
 Keytab Files：从KDC主数据库中提取的文件，并且包含的服务或主机的加密密钥。
 ```
+<!--more-->
 
 * mongodb 启用kerberos
 使用kerberos授权登录可以更大的增加安全性

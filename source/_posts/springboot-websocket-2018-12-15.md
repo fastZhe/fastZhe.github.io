@@ -9,6 +9,7 @@ categories: ["springboot","websocket","java"]
 ## 简介
 使用springboot websocket过程整理
 
+<!--more-->
 
 ### 配置pom依赖
 ```xml

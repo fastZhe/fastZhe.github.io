@@ -99,13 +99,13 @@
   <meta name="keywords" content="netty," />
 
 
-<meta name="description" content="线程模型传统的线程池模型：jDK1.5之后的Executor的API，表现入下：   一个线程从池子中的free列表选中，并且指派一个提交的任务（实现了Runnable接口的任务） 当任务完成的时候，这个线程将返回到list中，并且变得可用  总结传统的这种池化以及可重用提升了线程的创建于销毁，但是并没有排除线程上下文的切换 EventLoop 接口当连接发生的整个生命周期，运行一个任务处理事件，">
+<meta name="description" content="线程模型传统的线程池模型：jDK1.5之后的Executor的API，表现入下：   一个线程从池子中的free列表选中，并且指派一个提交的任务（实现了Runnable接口的任务） 当任务完成的时候，这个线程将返回到list中，并且变得可用">
 <meta name="keywords" content="netty">
 <meta property="og:type" content="article">
 <meta property="og:title" content="netty EventLoop与Thread">
 <meta property="og:url" content="http://blog.wudd.top/2018/08/02/chapter7-2018-8-2/index.html">
 <meta property="og:site_name" content="Hzhe">
-<meta property="og:description" content="线程模型传统的线程池模型：jDK1.5之后的Executor的API，表现入下：   一个线程从池子中的free列表选中，并且指派一个提交的任务（实现了Runnable接口的任务） 当任务完成的时候，这个线程将返回到list中，并且变得可用  总结传统的这种池化以及可重用提升了线程的创建于销毁，但是并没有排除线程上下文的切换 EventLoop 接口当连接发生的整个生命周期，运行一个任务处理事件，">
+<meta property="og:description" content="线程模型传统的线程池模型：jDK1.5之后的Executor的API，表现入下：   一个线程从池子中的free列表选中，并且指派一个提交的任务（实现了Runnable接口的任务） 当任务完成的时候，这个线程将返回到list中，并且变得可用">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-2-1.png">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-2-2.png">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-2-3.png">
@@ -113,10 +113,10 @@
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-2-5.png">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-2-6.png">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-2-7.png">
-<meta property="og:updated_time" content="2018-08-05T07:15:28.000Z">
+<meta property="og:updated_time" content="2019-09-23T06:59:36.421Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="netty EventLoop与Thread">
-<meta name="twitter:description" content="线程模型传统的线程池模型：jDK1.5之后的Executor的API，表现入下：   一个线程从池子中的free列表选中，并且指派一个提交的任务（实现了Runnable接口的任务） 当任务完成的时候，这个线程将返回到list中，并且变得可用  总结传统的这种池化以及可重用提升了线程的创建于销毁，但是并没有排除线程上下文的切换 EventLoop 接口当连接发生的整个生命周期，运行一个任务处理事件，">
+<meta name="twitter:description" content="线程模型传统的线程池模型：jDK1.5之后的Executor的API，表现入下：   一个线程从池子中的free列表选中，并且指派一个提交的任务（实现了Runnable接口的任务） 当任务完成的时候，这个线程将返回到list中，并且变得可用">
 <meta name="twitter:image" content="http://blog.wudd.top/images/netty_part1/2018-8-2-1.png">
 
 
@@ -432,7 +432,8 @@
 <p><img src="/images/netty_part1/2018-8-2-1.png" alt="netty-7"></p>
 <ul>
 <li>一个线程从池子中的free列表选中，并且指派一个提交的任务（实现了Runnable接口的任务）</li>
-<li>当任务完成的时候，这个线程将返回到list中，并且变得可用</li>
+<li>当任务完成的时候，这个线程将返回到list中，并且变得可用<a id="more"></a>
+</li>
 </ul>
 <h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>传统的这种池化以及可重用提升了线程的创建于销毁，但是并没有排除线程上下文的切换</p>
 <h3 id="EventLoop-接口"><a href="#EventLoop-接口" class="headerlink" title="EventLoop 接口"></a>EventLoop 接口</h3><p>当连接发生的整个生命周期，运行一个任务处理事件，是一个基础的网络框架的功能。相应的架构通常是作为一个事件循环，netty是使用EventLoop这个接口实现的，如下图：<br><img src="/images/netty_part1/2018-8-2-2.png" alt="netty-7"></p>
@@ -514,8 +515,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/01/chapter6-2018-8-1/" rel="next" title="netty ChannelHandler and ChannelPipeline">
-                <i class="fa fa-chevron-left"></i> netty ChannelHandler and ChannelPipeline
+              <a href="/2018/08/01/http协议学习-2018-8-1/" rel="next" title="HTTP协议">
+                <i class="fa fa-chevron-left"></i> HTTP协议
               </a>
             
           </div>

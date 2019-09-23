@@ -13,6 +13,7 @@ categories: ["internet"]
 这是OSI（开放系统连接--open system interconnection）模型
 ![osi](/images/internet/2018-8-1-3.png)
 
+<!--more-->
 
 这是三者的关系
 ![tcp/http/socket](/images/internet/2018-8-1-4.png)

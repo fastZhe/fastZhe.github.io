@@ -15,6 +15,7 @@ categories: ["docker","shadowsocks"]
 可以使用作者已有的仓库镜像
 
 * 默认开启五个端口，密码都为hhhzz，加密方法为：aes-256-cfb
+<!--more-->
 
 ```
 # 使用默认的配置文件

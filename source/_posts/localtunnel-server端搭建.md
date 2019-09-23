@@ -15,6 +15,7 @@ category: ["内网穿透"]
 
 * 前提：本机安装git、 nodejs 
 * 有独立域名、独立主机（公网ip）
+<!--more-->
 
 ```bash
 $ git clone  https://github.com/localtunnel/server.git

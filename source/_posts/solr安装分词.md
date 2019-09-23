@@ -14,6 +14,8 @@ category: ["linux","solr"]
 tar -xvf solr-7.2.1.tgz
 
 ```
+<!--more-->
+
 ### 1. 直接使用solr
 ```
 cd solrHome(solrHome是solr的路径)

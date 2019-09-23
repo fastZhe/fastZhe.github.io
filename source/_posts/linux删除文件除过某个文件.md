@@ -13,6 +13,7 @@ category: ["linux","shell"]
 ```bash
 rm -fr !(file1)
 ```
+<!--more-->
 
 
 ### 使用find

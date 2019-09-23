@@ -99,17 +99,17 @@
   <meta name="keywords" content="rsync,rm," />
 
 
-<meta name="description" content="问题：快速删除一个文件夹下的大量文件？ 使用rm 大量文件会很慢，更大时并且会报错 实际原理：遍历删除    1$ rm -fr *  使用rsync删除 实际原理：使用空文件夹替换要删除的文件夹    1234567891011#建立新的空文件夹$ mkdir src#建立实际有很多文件的文件夹$ mkdir dest#模拟生成大量文件  900000个文件$ touch file&amp;#123;1">
+<meta name="description" content="问题：快速删除一个文件夹下的大量文件？ 使用rm 大量文件会很慢，更大时并且会报错 实际原理：遍历删除    1$ rm -fr *">
 <meta name="keywords" content="rsync,rm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux下使用rsync快速删除大量文件">
 <meta property="og:url" content="http://blog.wudd.top/2018/01/31/linux下使用rsync快速删除大量文件/index.html">
 <meta property="og:site_name" content="Hzhe">
-<meta property="og:description" content="问题：快速删除一个文件夹下的大量文件？ 使用rm 大量文件会很慢，更大时并且会报错 实际原理：遍历删除    1$ rm -fr *  使用rsync删除 实际原理：使用空文件夹替换要删除的文件夹    1234567891011#建立新的空文件夹$ mkdir src#建立实际有很多文件的文件夹$ mkdir dest#模拟生成大量文件  900000个文件$ touch file&amp;#123;1">
-<meta property="og:updated_time" content="2018-02-03T14:44:55.000Z">
+<meta property="og:description" content="问题：快速删除一个文件夹下的大量文件？ 使用rm 大量文件会很慢，更大时并且会报错 实际原理：遍历删除    1$ rm -fr *">
+<meta property="og:updated_time" content="2019-09-23T06:59:28.983Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux下使用rsync快速删除大量文件">
-<meta name="twitter:description" content="问题：快速删除一个文件夹下的大量文件？ 使用rm 大量文件会很慢，更大时并且会报错 实际原理：遍历删除    1$ rm -fr *  使用rsync删除 实际原理：使用空文件夹替换要删除的文件夹    1234567891011#建立新的空文件夹$ mkdir src#建立实际有很多文件的文件夹$ mkdir dest#模拟生成大量文件  900000个文件$ touch file&amp;#123;1">
+<meta name="twitter:description" content="问题：快速删除一个文件夹下的大量文件？ 使用rm 大量文件会很慢，更大时并且会报错 实际原理：遍历删除    1$ rm -fr *">
 
 
 
@@ -427,6 +427,7 @@
 </li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rm -fr *</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <ul>
 <li>使用rsync删除<blockquote>
 <p>实际原理：使用空文件夹替换要删除的文件夹</p>

@@ -12,6 +12,7 @@ category: ["linux","shell"]
 ```bash
 $ rm -fr *
 ```
+<!--more-->
 
 * 使用rsync删除
 > 实际原理：使用空文件夹替换要删除的文件夹

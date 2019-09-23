@@ -17,6 +17,7 @@ netty的编解码类别主要分为以下三种
 * ByteToMessage 入站解码
 * MessageToByte 出站编码
 * MessageToMessage  出站入站均可（编解码）
+<!--more-->
 
 * 解码继承：ByteToMessageDecoder,该类继承ChannelInboundHandlerAdapter   该类为进站处理
 * 编码继承：MessageToByteEncoder，该类继承ChannelOutboundHandlerAdapter  该类为出站处理

@@ -99,21 +99,21 @@
   <meta name="keywords" content="netty," />
 
 
-<meta name="description" content="简介本章主要覆盖以下几方面，单元测试，EmbeddedChannel的简介，使用EmbeddedChannel测试ChannelHandlers ChannelHandlers是netty应用模块中最重要的一部分，因此彻底的测试在开发过程中也是标准的一部分，很多最好的事件表名你的测试并不能证明你的实现是正确的，但是使用Unit Testing 总是很容易隔离问题。 EmbeddedChannel">
+<meta name="description" content="简介本章主要覆盖以下几方面，单元测试，EmbeddedChannel的简介，使用EmbeddedChannel测试ChannelHandlers ChannelHandlers是netty应用模块中最重要的一部分，因此彻底的测试在开发过程中也是标准的一部分，很多最好的事件表名你的测试并不能证明你的实现是正确的，但是使用Unit Testing 总是很容易隔离问题。">
 <meta name="keywords" content="netty">
 <meta property="og:type" content="article">
 <meta property="og:title" content="netty Unit testing">
 <meta property="og:url" content="http://blog.wudd.top/2018/08/04/chapter9-2018-8-4/index.html">
 <meta property="og:site_name" content="Hzhe">
-<meta property="og:description" content="简介本章主要覆盖以下几方面，单元测试，EmbeddedChannel的简介，使用EmbeddedChannel测试ChannelHandlers ChannelHandlers是netty应用模块中最重要的一部分，因此彻底的测试在开发过程中也是标准的一部分，很多最好的事件表名你的测试并不能证明你的实现是正确的，但是使用Unit Testing 总是很容易隔离问题。 EmbeddedChannel">
+<meta property="og:description" content="简介本章主要覆盖以下几方面，单元测试，EmbeddedChannel的简介，使用EmbeddedChannel测试ChannelHandlers ChannelHandlers是netty应用模块中最重要的一部分，因此彻底的测试在开发过程中也是标准的一部分，很多最好的事件表名你的测试并不能证明你的实现是正确的，但是使用Unit Testing 总是很容易隔离问题。">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-4-1.png">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-4-2.png">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-4-3.png">
 <meta property="og:image" content="http://blog.wudd.top/images/netty_part1/2018-8-4-4.png">
-<meta property="og:updated_time" content="2018-08-05T07:15:28.000Z">
+<meta property="og:updated_time" content="2019-09-23T06:59:34.255Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="netty Unit testing">
-<meta name="twitter:description" content="简介本章主要覆盖以下几方面，单元测试，EmbeddedChannel的简介，使用EmbeddedChannel测试ChannelHandlers ChannelHandlers是netty应用模块中最重要的一部分，因此彻底的测试在开发过程中也是标准的一部分，很多最好的事件表名你的测试并不能证明你的实现是正确的，但是使用Unit Testing 总是很容易隔离问题。 EmbeddedChannel">
+<meta name="twitter:description" content="简介本章主要覆盖以下几方面，单元测试，EmbeddedChannel的简介，使用EmbeddedChannel测试ChannelHandlers ChannelHandlers是netty应用模块中最重要的一部分，因此彻底的测试在开发过程中也是标准的一部分，很多最好的事件表名你的测试并不能证明你的实现是正确的，但是使用Unit Testing 总是很容易隔离问题。">
 <meta name="twitter:image" content="http://blog.wudd.top/images/netty_part1/2018-8-4-1.png">
 
 
@@ -427,6 +427,7 @@
       
         <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>本章主要覆盖以下几方面，单元测试，EmbeddedChannel的简介，使用EmbeddedChannel测试ChannelHandlers</p>
 <p>ChannelHandlers是netty应用模块中最重要的一部分，因此彻底的测试在开发过程中也是标准的一部分，很多最好的事件表名你的测试并不能证明你的实现是正确的，但是使用Unit Testing 总是很容易隔离问题。</p>
+<a id="more"></a>
 <h3 id="EmbeddedChannel-概述"><a href="#EmbeddedChannel-概述" class="headerlink" title="EmbeddedChannel 概述"></a>EmbeddedChannel 概述</h3><p>Netty中提供了一个叫做embedded transport 为了测试ChannelHandlers，这个具有传输特性的channel实现，EmbeddedChannel，提供一种简单的方式让事件通过整个Pipeline</p>
 <p>这种注意是很直接的，你可以用EmbeddedChannel写入站与出站的数据，然后检测通过ChannelPipeline的数据是否符合预期</p>
 <p><img src="/images/netty_part1/2018-8-4-1.png" alt="netty-9"></p>
