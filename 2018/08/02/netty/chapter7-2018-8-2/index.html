@@ -395,7 +395,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/08/02/netty/chapter7-2018-8-2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/08/02/netty/chapter7-2018-8-2/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/02/netty/chapter7-2018-8-2/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -515,8 +515,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/01/netty/chapter6-2018-8-1/" rel="next" title="netty ChannelHandler and ChannelPipeline">
-                <i class="fa fa-chevron-left"></i> netty ChannelHandler and ChannelPipeline
+              <a href="/2018/08/01/common/net/tcp-socket-http区别-2018-8-1/" rel="next" title="tcp-socket-http区别">
+                <i class="fa fa-chevron-left"></i> tcp-socket-http区别
               </a>
             
           </div>
@@ -555,11 +555,7 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
     </div>
-
   
 
 
@@ -977,44 +973,29 @@
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname,
-            owner: 'fastZhe',
-            repo: 'hexo_comment_collection',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: '2a4327e53a5d839cddadbc6efcced34f82c04ec0',
-            
-                client_id: 'abfd6235ee903e7fc4e4'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
-    
 
 
-
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'gMYAPacVqPWUwIv6s3NvPrvi-MdYXbMMI',
+        appKey: 'aCFpsgXDS3IUgcyxmeI99BS8',
+        placeholder: 'Just go go go comment',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

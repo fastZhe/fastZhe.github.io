@@ -73,14 +73,14 @@
 
     
   <url>
-    <loc>http://blog.wudd.top/2018/07/22/common/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E9%BB%91%E6%9D%BF%E6%A8%A1%E5%BC%8F-2018-07-22/</loc>
+    <loc>http://blog.wudd.top/2018/07/21/common/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E9%9B%87%E5%B7%A5%E6%A8%A1%E5%BC%8F-2018-07-21/</loc>
     <lastmod>2019-09-23T07:16:00.197Z</lastmod>
     <data>
         <display>
-        <title>设计模式之黑板模式</title>
-        <pubTime>2018-07-22T00:36:02.000Z</pubTime>
+        <title>设计模式之雇工模式</title>
+        <pubTime>2018-07-21T00:36:02.000Z</pubTime>
         
-        <tag>黑板模式</tag>
+        <tag>雇工模式</tag>
          
          
            
@@ -93,14 +93,14 @@
 
     
   <url>
-    <loc>http://blog.wudd.top/2018/07/21/common/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E9%9B%87%E5%B7%A5%E6%A8%A1%E5%BC%8F-2018-07-21/</loc>
+    <loc>http://blog.wudd.top/2018/07/22/common/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E9%BB%91%E6%9D%BF%E6%A8%A1%E5%BC%8F-2018-07-22/</loc>
     <lastmod>2019-09-23T07:16:00.197Z</lastmod>
     <data>
         <display>
-        <title>设计模式之雇工模式</title>
-        <pubTime>2018-07-21T00:36:02.000Z</pubTime>
+        <title>设计模式之黑板模式</title>
+        <pubTime>2018-07-22T00:36:02.000Z</pubTime>
         
-        <tag>雇工模式</tag>
+        <tag>黑板模式</tag>
          
          
            
@@ -203,30 +203,10 @@
         <title>tcp-socket-http区别</title>
         <pubTime>2018-08-01T00:36:02.000Z</pubTime>
         
-        <tag>socket</tag>
-         
         <tag>http</tag>
          
-        <tag>tcp</tag>
+        <tag>socket</tag>
          
-         
-           
-             
-              <breadCrumb title="internet" url="http://blog.wudd.top/categories/internet/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.wudd.top/2018/07/20/common/net/tcp%E5%AD%A6%E4%B9%A0%E4%B8%8A-2018-07-24/</loc>
-    <lastmod>2019-09-23T07:15:38.785Z</lastmod>
-    <data>
-        <display>
-        <title>Tcp学习_上</title>
-        <pubTime>2018-07-20T00:36:02.000Z</pubTime>
-        
         <tag>tcp</tag>
          
          
@@ -256,6 +236,26 @@
           
              
               <breadCrumb title="tcp" url="http://blog.wudd.top/categories/internet/tcp/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.wudd.top/2018/07/20/common/net/tcp%E5%AD%A6%E4%B9%A0%E4%B8%8A-2018-07-24/</loc>
+    <lastmod>2019-09-23T07:15:38.785Z</lastmod>
+    <data>
+        <display>
+        <title>Tcp学习_上</title>
+        <pubTime>2018-07-20T00:36:02.000Z</pubTime>
+        
+        <tag>tcp</tag>
+         
+         
+           
+             
+              <breadCrumb title="internet" url="http://blog.wudd.top/categories/internet/"/>
           
         </display>
     </data>
@@ -524,29 +524,6 @@
 
     
   <url>
-    <loc>http://blog.wudd.top/2018/08/02/netty/chapter7-2018-8-2/</loc>
-    <lastmod>2019-09-23T07:10:19.373Z</lastmod>
-    <data>
-        <display>
-        <title>netty EventLoop与Thread</title>
-        <pubTime>2018-08-02T00:36:02.000Z</pubTime>
-        
-        <tag>netty</tag>
-         
-         
-           
-             
-              <breadCrumb title="netty" url="http://blog.wudd.top/categories/netty/"/>
-          
-             
-              <breadCrumb title="EventLoop" url="http://blog.wudd.top/categories/netty/EventLoop/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://blog.wudd.top/2018/08/03/netty/chapter8-2018-8-3/</loc>
     <lastmod>2019-09-23T07:10:19.373Z</lastmod>
     <data>
@@ -563,6 +540,29 @@
           
              
               <breadCrumb title="Bootstrap" url="http://blog.wudd.top/categories/netty/Bootstrap/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.wudd.top/2018/08/02/netty/chapter7-2018-8-2/</loc>
+    <lastmod>2019-09-23T07:10:19.373Z</lastmod>
+    <data>
+        <display>
+        <title>netty EventLoop与Thread</title>
+        <pubTime>2018-08-02T00:36:02.000Z</pubTime>
+        
+        <tag>netty</tag>
+         
+         
+           
+             
+              <breadCrumb title="netty" url="http://blog.wudd.top/categories/netty/"/>
+          
+             
+              <breadCrumb title="EventLoop" url="http://blog.wudd.top/categories/netty/EventLoop/"/>
           
         </display>
     </data>
@@ -596,6 +596,29 @@
 
     
   <url>
+    <loc>http://blog.wudd.top/2018/07/29/netty/chapter1-2018-7-27/</loc>
+    <lastmod>2019-09-23T07:10:19.297Z</lastmod>
+    <data>
+        <display>
+        <title>netty asynchronous</title>
+        <pubTime>2018-07-29T00:36:02.000Z</pubTime>
+        
+        <tag>netty</tag>
+         
+         
+           
+             
+              <breadCrumb title="netty" url="http://blog.wudd.top/categories/netty/"/>
+          
+             
+              <breadCrumb title="asynchronous" url="http://blog.wudd.top/categories/netty/asynchronous/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.wudd.top/2018/07/31/netty/chapter5-2018-7-31/</loc>
     <lastmod>2019-09-23T07:10:19.297Z</lastmod>
     <data>
@@ -612,29 +635,6 @@
           
              
               <breadCrumb title="ByteBuf" url="http://blog.wudd.top/categories/netty/ByteBuf/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.wudd.top/2018/07/30/netty/chapter4-2018-7-30/</loc>
-    <lastmod>2019-09-23T07:10:19.297Z</lastmod>
-    <data>
-        <display>
-        <title>netty 传输</title>
-        <pubTime>2018-07-30T00:36:02.000Z</pubTime>
-        
-        <tag>netty</tag>
-         
-         
-           
-             
-              <breadCrumb title="netty" url="http://blog.wudd.top/categories/netty/"/>
-          
-             
-              <breadCrumb title="transport" url="http://blog.wudd.top/categories/netty/transport/"/>
           
         </display>
     </data>
@@ -665,29 +665,6 @@
 
     
   <url>
-    <loc>http://blog.wudd.top/2018/07/29/netty/chapter1-2018-7-27/</loc>
-    <lastmod>2019-09-23T07:10:19.297Z</lastmod>
-    <data>
-        <display>
-        <title>netty asynchronous</title>
-        <pubTime>2018-07-29T00:36:02.000Z</pubTime>
-        
-        <tag>netty</tag>
-         
-         
-           
-             
-              <breadCrumb title="netty" url="http://blog.wudd.top/categories/netty/"/>
-          
-             
-              <breadCrumb title="asynchronous" url="http://blog.wudd.top/categories/netty/asynchronous/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://blog.wudd.top/2018/07/28/netty/chapter2-2018-7-28/</loc>
     <lastmod>2019-09-23T07:10:19.297Z</lastmod>
     <data>
@@ -701,6 +678,29 @@
            
              
               <breadCrumb title="netty" url="http://blog.wudd.top/categories/netty/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.wudd.top/2018/07/30/netty/chapter4-2018-7-30/</loc>
+    <lastmod>2019-09-23T07:10:19.297Z</lastmod>
+    <data>
+        <display>
+        <title>netty 传输</title>
+        <pubTime>2018-07-30T00:36:02.000Z</pubTime>
+        
+        <tag>netty</tag>
+         
+         
+           
+             
+              <breadCrumb title="netty" url="http://blog.wudd.top/categories/netty/"/>
+          
+             
+              <breadCrumb title="transport" url="http://blog.wudd.top/categories/netty/transport/"/>
           
         </display>
     </data>
