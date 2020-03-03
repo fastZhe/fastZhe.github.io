@@ -23,7 +23,7 @@
   </url>
   
   <url>
-    <loc>http://blog.wudd.top/2018/07/22/common/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E9%BB%91%E6%9D%BF%E6%A8%A1%E5%BC%8F-2018-07-22/</loc>
+    <loc>http://blog.wudd.top/2018/07/20/common/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%AF%B9%E8%B1%A1%E6%B1%A0%E6%A8%A1%E5%BC%8F-2018-07-20/</loc>
     
     <lastmod>2019-09-23T07:16:00.197Z</lastmod>
     
@@ -37,14 +37,14 @@
   </url>
   
   <url>
-    <loc>http://blog.wudd.top/2018/07/23/common/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%A9%BA%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%BC%8F-2018-07-23/</loc>
+    <loc>http://blog.wudd.top/2018/07/22/common/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E9%BB%91%E6%9D%BF%E6%A8%A1%E5%BC%8F-2018-07-22/</loc>
     
     <lastmod>2019-09-23T07:16:00.197Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.wudd.top/2018/07/20/common/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%AF%B9%E8%B1%A1%E6%B1%A0%E6%A8%A1%E5%BC%8F-2018-07-20/</loc>
+    <loc>http://blog.wudd.top/2018/07/23/common/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%A9%BA%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%BC%8F-2018-07-23/</loc>
     
     <lastmod>2019-09-23T07:16:00.197Z</lastmod>
     
@@ -65,13 +65,6 @@
   </url>
   
   <url>
-    <loc>http://blog.wudd.top/2018/07/20/common/net/tcp%E5%AD%A6%E4%B9%A0%E4%B8%8A-2018-07-24/</loc>
-    
-    <lastmod>2019-09-23T07:15:38.785Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.wudd.top/2018/07/25/common/net/tcp%E5%90%8D%E8%AF%8D%E8%A7%A3%E6%9E%90-2018-07-25/</loc>
     
     <lastmod>2019-09-23T07:15:38.785Z</lastmod>
@@ -86,7 +79,7 @@
   </url>
   
   <url>
-    <loc>http://blog.wudd.top/2018/08/01/common/net/tcp-socket-http%E5%8C%BA%E5%88%AB-2018-8-1/</loc>
+    <loc>http://blog.wudd.top/2018/07/20/common/net/tcp%E5%AD%A6%E4%B9%A0%E4%B8%8A-2018-07-24/</loc>
     
     <lastmod>2019-09-23T07:15:38.785Z</lastmod>
     
@@ -94,6 +87,13 @@
   
   <url>
     <loc>http://blog.wudd.top/2018/08/01/common/net/socket%E7%9F%A5%E8%AF%86-2018-8-1/</loc>
+    
+    <lastmod>2019-09-23T07:15:38.785Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.wudd.top/2018/08/01/common/net/tcp-socket-http%E5%8C%BA%E5%88%AB-2018-8-1/</loc>
     
     <lastmod>2019-09-23T07:15:38.785Z</lastmod>
     
@@ -177,7 +177,7 @@
   </url>
   
   <url>
-    <loc>http://blog.wudd.top/2018/07/30/netty/chapter4-2018-7-30/</loc>
+    <loc>http://blog.wudd.top/2018/07/31/netty/chapter5-2018-7-31/</loc>
     
     <lastmod>2019-09-23T07:10:19.297Z</lastmod>
     
@@ -191,6 +191,13 @@
   </url>
   
   <url>
+    <loc>http://blog.wudd.top/2018/07/29/netty/chapter3-2018-7-29/</loc>
+    
+    <lastmod>2019-09-23T07:10:19.297Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.wudd.top/2018/08/01/netty/chapter6-2018-8-1/</loc>
     
     <lastmod>2019-09-23T07:10:19.297Z</lastmod>
@@ -198,7 +205,7 @@
   </url>
   
   <url>
-    <loc>http://blog.wudd.top/2018/07/31/netty/chapter5-2018-7-31/</loc>
+    <loc>http://blog.wudd.top/2018/07/30/netty/chapter4-2018-7-30/</loc>
     
     <lastmod>2019-09-23T07:10:19.297Z</lastmod>
     
@@ -206,13 +213,6 @@
   
   <url>
     <loc>http://blog.wudd.top/2018/07/29/netty/chapter1-2018-7-27/</loc>
-    
-    <lastmod>2019-09-23T07:10:19.297Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.wudd.top/2018/07/29/netty/chapter3-2018-7-29/</loc>
     
     <lastmod>2019-09-23T07:10:19.297Z</lastmod>
     

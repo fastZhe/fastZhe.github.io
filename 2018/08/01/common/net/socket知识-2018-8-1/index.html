@@ -387,7 +387,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/08/01/common/net/socket知识-2018-8-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/01/common/net/socket知识-2018-8-1/" itemprop="commentCount"></span>
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/08/01/common/net/socket知识-2018-8-1/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -495,8 +495,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/02/netty/chapter7-2018-8-2/" rel="prev" title="netty EventLoop与Thread">
-                netty EventLoop与Thread <i class="fa fa-chevron-right"></i>
+              <a href="/2018/08/01/common/net/http协议学习-2018-8-1/" rel="prev" title="HTTP协议">
+                HTTP协议 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -525,7 +525,11 @@
 
   
     <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
     </div>
+
   
 
 
@@ -780,7 +784,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -943,29 +947,44 @@
 
 
 
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'fastZhe',
+            repo: 'hexo_comment_collection',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '2a4327e53a5d839cddadbc6efcced34f82c04ec0',
+            
+                client_id: 'abfd6235ee903e7fc4e4'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'gMYAPacVqPWUwIv6s3NvPrvi-MdYXbMMI',
-        appKey: 'aCFpsgXDS3IUgcyxmeI99BS8',
-        placeholder: 'Just go go go comment',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
+
 
 
 
